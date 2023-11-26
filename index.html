@@ -33,9 +33,9 @@ a span{
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="https://plus.unsplash.com/premium_photo-1676686127213-bec2c46f14f2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%" alt="blue white and yellow abstract painting">
+          <img src="https://images.unsplash.com/photo-1560006233-3a573d9bea89?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%" alt="blue white and yellow abstract painting">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>ChiaraBi</h2>
+            <h2 class="w3-text-white">ChiaraBi</h2>
           </div>
         </div>
         <div class="w3-container">
@@ -46,15 +46,15 @@ a span{
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
-          </div>
           <p>Machine Learning</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
               <div class="w3-center w3-text-white">65%</div>
             </div>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
           </div>
           <p>Git</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -91,21 +91,48 @@ a span{
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Sentiment Analysis, Emotion Recognition and Hate Speech Detection on English tweets</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2022</h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>Natural Language Processing tasks have been widely studied in the context of big corpora, but, when applied to social media content,
+          they have been proven to be harder. This is mainly due to the following reasons:</p>
+          <ul>
+            <li>Social media have a high-paced, conversational and idiosyncratic nature;</li>
+            <li>There might be restriction in the number of characters allowed (this is the case on Twitter);</li>
+            <li>Short texts contains a limited amount of contextual cues;</li>
+          </ul>
+          <p>The lack of a unified evaluation framework makes it hard to compare different models.</p>
+          <p>In this project I used <strong>BERTweet</strong>, a large-scale language model pretrained on English tweets, and I evaluated its performances
+          on three different NLP tasks:</p>
+           <ul>
+            <li><em>Emotion Recognition</em>, which consists in recognizing the emotion evoked in a text (a tweet in this case);</li>
+            <li><em>Hate Speech Detection</em>, which consists in understanding whether a tweet is hateful or not towards certain target communities;</li>
+            <li><em>Sentiment Analysis</em>, i.e. the task of recognizing if the content of a text is positive, negative or neutral.</li>
+          </ul>
+
          <hr>
         </div>
         
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Automatic Image Colorization: a comparative overview</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022</h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>The colorization of greyscale images is an ill-posed problem that was approached in different ways in literature.
+          This project provides a comparative analysis concerning five pre-trained colorization models and a cartoonization-based
+          baseline of our invention. The performances are assessed through both quantitative and qualitative metrics, with a final
+          evaluation of the results with respect to image filtering.</p>
+          <img src="img/projects-imgcol.png" width="96%" alt="Colorization comparison on two images from ImageNet Church (first row) and Bird Species Flamingo (second row)">
          <hr>
         </div>
         
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Universal Adversarial Perturbation starring Frank-Wolfe</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021</h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>The main goal of the project is to analyze three different <strong>Stochastic Gradient Free Frank-Wolfe algorithms</strong>
+          for producing <strong>Universal Adversarial Perturbations</strong>. These perturbations are designed to fool advanced
+          Convolutional Neural Networks, such as
+          <a href="https://en.wikipedia.org/wiki/LeNet" target="_blank" class="w3-hover-opacity"><span>LeNet-5</span></a> and
+          <a href="https://en.wikipedia.org/wiki/AlexNet" target="_blank" class="w3-hover-opacity"><span>AlexNet</span></a>,
+          on the classification task performed over the
+          <a href="https://it.wikipedia.org/wiki/MNIST_database" target="_blank" class="w3-hover-opacity"><span>MNIST dataset</span></a>.</p>
+        
+          <img src="img/projects-advattack.png" width="96%" alt="MNIST dataset + universal adversarial perturbation = perturbated sample">
         </div>
         
       </div>
@@ -115,7 +142,8 @@ a span{
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Software Developer</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2022 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>App development using <a href="https://flutter.dev/" target="_blank" class="w3-hover-opacity"><span>Flutter</span></a>,
+          an open source framework by Google for building natively compiled, multi-platform applications from a single codebase.</p>
           <hr>
         </div>
         <div class="w3-container">
