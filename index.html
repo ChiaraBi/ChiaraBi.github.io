@@ -28,7 +28,14 @@ a span{
   color: dodgerblue;
 }
 
+.skills {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
 
+.social-media {
+  color: white;
+}
 </style>
 <script>
 $(document).ready(function() {
@@ -87,24 +94,24 @@ $(document).ready(function() {
           </div>
         </div>
         <div class="w3-container w3-margin-top">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer | Data Science MS student</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer | Data Science MSc graduate</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>EU</p>
           <!-- <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i></p> -->
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Machine Learning</p>
+          <p class="skills">Machine Learning</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
               <div class="w3-center w3-text-white">65%</div>
             </div>
           </div>
-          <p>Python</p>
+          <p class="skills">Python</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
           </div>
-          <p>Git</p>
+          <p class="skills">Git</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
           </div>
@@ -112,15 +119,15 @@ $(document).ready(function() {
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>Italian</p>
+          <p class="skills">Italian</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
-          <p>English</p>
+          <p class="skills">English</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:95%"></div>
           </div>
-          <p>Spanish</p>
+          <p class="skills">Spanish</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
           </div>
@@ -133,105 +140,115 @@ $(document).ready(function() {
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
-    <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-star fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-        <div class="w3-container">
-     
-          <h5 class="w3-opacity"><b>Sentiment Analysis, Emotion Recognition and Hate Speech Detection on English tweets</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2022
-            <a data-bs-toggle="collapse" href="#project1" role="button" aria-expanded="false" aria-controls="project1"
-            id="project1-show" class="float-end">
-              <span class="w3-margin-left"></span> <i class="fa fa-chevron-down fa-fw"></i>
-            </a>
-            <a data-bs-toggle="collapse" href="#project1" role="button" aria-expanded="false" aria-controls="project1"
-            id="project1-hide" class="d-none float-end">
-              <span class="w3-margin-left"></span> <i class="fa fa-chevron-right fa-fw"></i>
-            </a>
-          </h6>
-          <div class="collapse" id="project1">
-            <p>Natural Language Processing tasks have been widely studied in the context of big corpora, but, when applied to social media content,
-            they have been proven to be harder. This is mainly due to the following reasons:</p>
-            <ul>
-              <li>Social media have a high-paced, conversational and idiosyncratic nature;</li>
-              <li>There might be restriction in the number of characters allowed (this is the case on Twitter);</li>
-              <li>Short texts contains a limited amount of contextual cues;</li>
-            </ul>
-            <p>The lack of a unified evaluation framework makes it hard to compare different models.</p>
-            <p>In this project I used <strong>BERTweet</strong>, a large-scale language model pretrained on English tweets, and I evaluated
-            its performances on three different NLP tasks:</p>
-             <ul>
-              <li><em>Emotion Recognition</em>, which consists in recognizing the emotion evoked in a text (a tweet in this case);</li>
-              <li><em>Hate Speech Detection</em>, which consists in understanding whether a tweet is hateful or not towards certain
-              target communities;</li>
-              <li><em>Sentiment Analysis</em>, i.e. the task of recognizing if the content of a text is positive, negative or neutral.</li>
-            </ul>
-          </div>
 
-         <hr>
-        </div>
-        
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Automatic Image Colorization: a comparative overview</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022
-            <a data-bs-toggle="collapse" href="#project2" role="button" aria-expanded="false" aria-controls="project2"
-            id="project2-show" class="float-end">
-              <span class="w3-margin-left"></span> <i class="fa fa-chevron-down fa-fw"></i>
-            </a>
-            <a data-bs-toggle="collapse" href="#project2" role="button" aria-expanded="false" aria-controls="project2"
-            id="project2-hide" class="d-none float-end">
-              <span class="w3-margin-left"></span> <i class="fa fa-chevron-right fa-fw"></i>
-            </a>
-          </h6>
-          <div class="collapse" id="project2">
-            <p>The colorization of greyscale images is an ill-posed problem that was approached in different ways in literature.
-              This project provides a comparative analysis concerning five pre-trained colorization models and a cartoonization-based
-              baseline of our invention. The performances are assessed through both quantitative and qualitative metrics, with a final
-              evaluation of the results with respect to image filtering.</p>
-            <img src="img/projects-imgcol.png" width="96%" alt="Colorization comparison on two images from ImageNet Church (first row) and Bird Species Flamingo (second row)"> 
-           </div>
-         <hr>
-        </div>
-        
-        <div class="w3-container w3-margin-bottom">
-          <h5 class="w3-opacity"><b>Universal Adversarial Perturbation starring Frank-Wolfe</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021
-            <a data-bs-toggle="collapse" href="#project3" role="button" aria-expanded="false" aria-controls="project3"
-            id="project3-show" class="float-end">
-              <span class="w3-margin-left"></span> <i class="fa fa-chevron-down fa-fw"></i>
-            </a>
-            <a data-bs-toggle="collapse" href="#project3" role="button" aria-expanded="false" aria-controls="project3"
-            id="project3-hide" class="d-none float-end">
-              <span class="w3-margin-left"></span> <i class="fa fa-chevron-right fa-fw"></i>
-            </a>
-          </h6>
-          <div class="collapse" id="project3">
-            <p>The main goal of the project is to analyze three different <strong>Stochastic Gradient Free Frank-Wolfe algorithms</strong>
-              for producing <strong>Universal Adversarial Perturbations</strong>. These perturbations are designed to fool advanced
-              Convolutional Neural Networks, such as
-              <a href="https://en.wikipedia.org/wiki/LeNet" target="_blank" class="w3-hover-opacity"><span>LeNet-5</span></a> and
-              <a href="https://en.wikipedia.org/wiki/AlexNet" target="_blank" class="w3-hover-opacity"><span>AlexNet</span></a>,
-              on the classification task performed over the
-              <a href="https://it.wikipedia.org/wiki/MNIST_database" target="_blank" class="w3-hover-opacity"><span>MNIST dataset</span></a>.</p>
-
-            <img src="img/projects-advattack.png" width="96%" alt="MNIST dataset + universal adversarial perturbation = perturbated sample">
-          </div>
-        </div>
-        
-      </div>
-    
+      <!-- Projects -->
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-star fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+            Projects
+          </h2>
+          <div class="w3-container">
+      
+            <h5 class="w3-opacity"><b>Sentiment Analysis, Emotion Recognition and Hate Speech Detection on English tweets</b></h5>
+            <h6 class="w3-text-teal">
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2022
+              <a data-bs-toggle="collapse" href="#project1" role="button" aria-expanded="false" aria-controls="project1"
+              id="project1-show" class="float-end">
+                <span class="w3-margin-left"></span> <i class="fa fa-chevron-down fa-fw"></i>
+              </a>
+              <a data-bs-toggle="collapse" href="#project1" role="button" aria-expanded="false" aria-controls="project1"
+              id="project1-hide" class="d-none float-end">
+                <span class="w3-margin-left"></span> <i class="fa fa-chevron-right fa-fw"></i>
+              </a>
+            </h6>
+            <div class="collapse" id="project1">
+              <p>Natural Language Processing tasks have been widely studied in the context of big corpora, but, when applied to social media content,
+              they have been proven to be harder. This is mainly due to the following reasons:</p>
+              <ul>
+                <li>Social media have a high-paced, conversational and idiosyncratic nature;</li>
+                <li>There might be restriction in the number of characters allowed (this is the case on Twitter);</li>
+                <li>Short texts contains a limited amount of contextual cues;</li>
+              </ul>
+              <p>The lack of a unified evaluation framework makes it hard to compare different models.</p>
+              <p>In this project I used <strong>BERTweet</strong>, a large-scale language model pretrained on English tweets, and I evaluated
+              its performances on three different NLP tasks:</p>
+              <ul>
+                <li><em>Emotion Recognition</em>, which consists in recognizing the emotion evoked in a text (a tweet in this case);</li>
+                <li><em>Hate Speech Detection</em>, which consists in understanding whether a tweet is hateful or not towards certain
+                target communities;</li>
+                <li><em>Sentiment Analysis</em>, i.e. the task of recognizing if the content of a text is positive, negative or neutral.</li>
+              </ul>
+            </div>
+
+          <hr>
+          </div>
+          
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Automatic Image Colorization: a comparative overview</b></h5>
+            <h6 class="w3-text-teal">
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022
+              <a data-bs-toggle="collapse" href="#project2" role="button" aria-expanded="false" aria-controls="project2"
+              id="project2-show" class="float-end">
+                <span class="w3-margin-left"></span> <i class="fa fa-chevron-down fa-fw"></i>
+              </a>
+              <a data-bs-toggle="collapse" href="#project2" role="button" aria-expanded="false" aria-controls="project2"
+              id="project2-hide" class="d-none float-end">
+                <span class="w3-margin-left"></span> <i class="fa fa-chevron-right fa-fw"></i>
+              </a>
+            </h6>
+            <div class="collapse" id="project2">
+              <p>The colorization of greyscale images is an ill-posed problem that was approached in different ways in literature.
+                This project provides a comparative analysis concerning five pre-trained colorization models and a cartoonization-based
+                baseline of our invention. The performances are assessed through both quantitative and qualitative metrics, with a final
+                evaluation of the results with respect to image filtering.</p>
+              <img src="img/projects-imgcol.png" width="96%" alt="Colorization comparison on two images from ImageNet Church (first row) and Bird Species Flamingo (second row)"> 
+            </div>
+          <hr>
+          </div>
+          
+          <div class="w3-container w3-margin-bottom">
+            <h5 class="w3-opacity"><b>Universal Adversarial Perturbation starring Frank-Wolfe</b></h5>
+            <h6 class="w3-text-teal">
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021
+              <a data-bs-toggle="collapse" href="#project3" role="button" aria-expanded="false" aria-controls="project3"
+              id="project3-show" class="float-end">
+                <span class="w3-margin-left"></span> <i class="fa fa-chevron-down fa-fw"></i>
+              </a>
+              <a data-bs-toggle="collapse" href="#project3" role="button" aria-expanded="false" aria-controls="project3"
+              id="project3-hide" class="d-none float-end">
+                <span class="w3-margin-left"></span> <i class="fa fa-chevron-right fa-fw"></i>
+              </a>
+            </h6>
+            <div class="collapse" id="project3">
+              <p>The main goal of the project is to analyze three different <strong>Stochastic Gradient Free Frank-Wolfe algorithms</strong>
+                for producing <strong>Universal Adversarial Perturbations</strong>. These perturbations are designed to fool advanced
+                Convolutional Neural Networks, such as
+                <a href="https://en.wikipedia.org/wiki/LeNet" target="_blank" class="w3-hover-opacity"><span>LeNet-5</span></a> and
+                <a href="https://en.wikipedia.org/wiki/AlexNet" target="_blank" class="w3-hover-opacity"><span>AlexNet</span></a>,
+                on the classification task performed over the
+                <a href="https://it.wikipedia.org/wiki/MNIST_database" target="_blank" class="w3-hover-opacity"><span>MNIST dataset</span></a>.</p>
+
+              <img src="img/projects-advattack.png" width="96%" alt="MNIST dataset + universal adversarial perturbation = perturbated sample">
+            </div>
+          </div>
+          
+      </div>
+
+      <!-- Work Experience -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+          Work Experience
+        </h2>
+        <!--
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Software Developer</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2022 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2022 - Mar 2025 <span class="w3-tag w3-teal w3-round">Current</span> </h6>
           <p>App development using <a href="https://flutter.dev/" target="_blank" class="w3-hover-opacity"><span>Flutter</span></a>,
           an open source framework by Google for building natively compiled, multi-platform applications from a single codebase.</p>
           <hr>
         </div>
+        -->
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Software Developer - CERN</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Jan 2020</h6>
@@ -242,8 +259,12 @@ $(document).ready(function() {
         </div>
       </div>
 
+      <!-- Education -->
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+          Education
+        </h2>
         <!--<div class="w3-container">
           <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
@@ -252,7 +273,7 @@ $(document).ready(function() {
         </div> -->
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Data Science</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2024</h6>
           <p>Master's Degree</p>
           <hr>
         </div>
@@ -273,12 +294,28 @@ $(document).ready(function() {
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
+  
   <p>Find me on social media.</p>
-   <a href="https://www.instagram.com/ai_and_ethics/" target="_blank">
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-   </a>
-   <i class="fa fa-linkedin w3-hover-opacity"></i>
-   <i class="fa fa-youtube w3-hover-opacity"></i>
+  
+  <p>
+      <a class="social-media" href="https://www.instagram.com/ai_and_ethics/" target="_blank">
+        <i class="fa fa-instagram fa-2x w3-hover-opacity"></i>
+      </a>
+     
+      <a class="social-media" href="https://medium.com/@chiarabi" target="_blank">
+        <i class="fa fa-brand fa-medium fa-2x w3-hover-opacity"></i>
+      </a>
+    </i>
+  </p>
+
+  <!--
+  <a href="https://medium.com/@chiarabi" target="_blank">
+      <img src="https://miro.medium.com/v2/5d8de952517e8160e40ef9841c781cdc14a5db313057fa3c3de41c6f5b494b19" class="w3-hover-opacity"/>
+  </a>
+  
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <i class="fa fa-youtube w3-hover-opacity"></i>
+  -->
 
    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
